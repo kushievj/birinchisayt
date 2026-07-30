@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <script src="theme.js?v=3"></script>
-<script src="i18n.js?v=3" defer></script>
+<script src="i18n.js?v=4" defer></script>
 </head>
 <body id="top">
 
@@ -26,7 +26,10 @@
     <ul class="nav-links">
       <li><a href="#top" data-i18n="navHome">Bosh sahifa</a></li>
       <li><a href="#services" data-i18n="navServices">Yo'nalishlar</a></li>
+      <li><a href="#work" data-i18n="navWork">Ishlarim</a></li>
       <li><a href="#projects" data-i18n="navProjects">Loyihalar</a></li>
+      <li><a href="#testimonials" data-i18n="navTestimonials">Fikrlar</a></li>
+      <li><a href="#faq" data-i18n="navFaq">Savol-javob</a></li>
       <li><a href="#contact" data-i18n="navContact">Aloqa</a></li>
     </ul>
 
@@ -169,6 +172,46 @@
 
 </div>
 
+<!-- ===== ISHLARIM =====
+     Kartalardagi rasm o'rni hozircha placeholder (ikonka + gradient) —
+     haqiqiy rasm qo'shilsa, .work-visual ichidagi <span class="icon"> o'rniga
+     <img> qo'yiladi. Matnlar taxminiy, shifokor tasdiqlashi kerak. -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="workEyebrow">Amaliyotdan</span>
+      <h2 data-i18n="workTitle">Ishlarim</h2>
+      <p class="sec-desc" data-i18n="workDesc">So'nggi davrda amalga oshirgan ishlarimdan namunalar.</p>
+    </div>
+
+    <div class="work-grid">
+      <article class="work-card reveal">
+        <div class="work-visual"><span class="icon">🔬</span></div>
+        <div class="work-body">
+          <h3 data-i18n="w1title">Laparoskopik operatsiyalar</h3>
+          <p data-i18n="w1text">Kichik kesim orqali amalga oshiriladigan zamonaviy operatsiyalar — tezroq tiklanish, kam og'riq.</p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual"><span class="icon">🩹</span></div>
+        <div class="work-body">
+          <h3 data-i18n="w2title">Endoskopik diagnostika</h3>
+          <p data-i18n="w2text">Oshqozon-ichak tizimini zamonaviy uskunalar bilan tekshirish va aniq tashxis qo'yish.</p>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-visual"><span class="icon">🗂️</span></div>
+        <div class="work-body">
+          <h3 data-i18n="w3title">Individual davolash rejasi</h3>
+          <p data-i18n="w3text">Har bir bemor uchun alohida tuzilgan davolash va kuzatuv rejasi.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ===== LOYIHALARIM ===== -->
 <section id="projects">
   <div class="wrap">
@@ -199,6 +242,99 @@
         <p data-i18n="p3text">Instagram sahifamda oshqozon-ichak sog'lig'i haqida oddiy tilda maslahatlar va
            bemorlar savollariga javoblar.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MIJOZLAR FIKRI =====
+     Sharh matnlari va ismlar taxminiy (umumiy "Bemor, shahar" ko'rinishida) —
+     shifokor real sharhlar bilan almashtirishi kerak. -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="testimonialsEyebrow">Fikrlar</span>
+      <h2 data-i18n="testimonialsTitle">Mijozlar fikri</h2>
+      <p class="sec-desc" data-i18n="testimonialsDesc">Davolangan bemorlarning ba'zi fikrlari.</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <article class="testimonial-card reveal">
+        <p class="testimonial-quote" data-i18n="t1quote">"Juda diqqatli va tushunarli tushuntirdi. Operatsiyadan keyin ham doim aloqada bo'ldi."</p>
+        <div class="testimonial-person">
+          <span class="avatar-circle">T</span>
+          <div>
+            <div class="testimonial-name" data-i18n="t1name">Bemor</div>
+            <div class="testimonial-role" data-i18n="t1role">Toshkent</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card reveal">
+        <p class="testimonial-quote" data-i18n="t2quote">"Konsultatsiyada barcha savollarimga sabr bilan javob berdi. Ishonch bilan tavsiya qilaman."</p>
+        <div class="testimonial-person">
+          <span class="avatar-circle">S</span>
+          <div>
+            <div class="testimonial-name" data-i18n="t2name">Bemor</div>
+            <div class="testimonial-role" data-i18n="t2role">Samarqand</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card reveal">
+        <p class="testimonial-quote" data-i18n="t3quote">"Endoskopiya tekshiruvi tez va professional o'tkazildi, natijalarni tushunarli tilda tushuntirdi."</p>
+        <div class="testimonial-person">
+          <span class="avatar-circle">B</span>
+          <div>
+            <div class="testimonial-name" data-i18n="t3name">Bemor</div>
+            <div class="testimonial-role" data-i18n="t3role">Buxoro</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SAVOL-JAVOB =====
+     Javoblar, ayniqsa narx haqidagisi, taxminiy — shifokor tasdiqlashi kerak. -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="faqEyebrow">Savollar</span>
+      <h2 data-i18n="faqTitle">Savol-javob</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>
+          <span data-i18n="q1q">Qabulga qanday yozilsam bo'ladi?</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p data-i18n="q1a">Telegram (@jackhon22) yoki telefon orqali bog'lanib, o'zingizga qulay vaqtni tanlashingiz mumkin.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          <span data-i18n="q2q">Birlamchi konsultatsiya narxi qancha?</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p data-i18n="q2a">Narx tekshiruv turiga qarab farq qiladi — aniq narxni Telegram yoki qo'ng'iroq orqali oldindan bilib olishingiz mumkin.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          <span data-i18n="q3q">Endoskopiya tekshiruviga qanday tayyorlanish kerak?</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p data-i18n="q3a">Tayyorgarlik tekshiruv turiga qarab farq qiladi (masalan, och qoringa kelish) — konsultatsiyada batafsil yo'riqnoma beriladi.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          <span data-i18n="q4q">Shoshilinch holatda qanday bog'lanaman?</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <p data-i18n="q4a">Shoshilinch holatlarda to'g'ridan-to'g'ri telefon orqali qo'ng'iroq qiling: +998 90 973 14 37.</p>
+      </details>
     </div>
   </div>
 </section>
